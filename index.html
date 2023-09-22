@@ -84,6 +84,7 @@ TIL a
 11000011
 11111111
 NAME block
+WAL true
 
 TIL b
 00000000
@@ -302,6 +303,18 @@ DLG 5
 POS 1 3,1
 BLIP 1
 
+SPR d
+11111111
+10000001
+10010001
+10111001
+10010001
+10010001
+10011001
+11111111
+DLG 6
+POS 1 6,14
+
 ITM 0
 00000000
 00011000
@@ -363,9 +376,16 @@ Ainda tem outros aspectos de um jogo, como sons, músicas, 2D, 3D, vários aspec
 
 eeeeeeeeeeee
 
-fim!{end}
+{wvy}fim!{wvy}{end}
 """
 NAME sprite c dialog
+
+DLG 6
+"""
+Caixas de textos podem ser usadas para descrever itens, ser a conversa de um NPC, ou o próprio pensamento do personagem controlado pelo jogador!
+Mas você reparou que algumas coisas desse jogo não estão descritas em texto? afinal jogo é muito mais que ler textos, é exploração é tudo aquilo que está no mundo que o jogador pode ver, interpretar e interagir.
+"""
+NAME sprite d dialog
 
 VAR a
 42
